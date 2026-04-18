@@ -1,0 +1,5 @@
+C:\Users\Nathaniel\Documents\Stellar Bootcamp\stellar-repo\contract\target\debug\deps\darling_macro-9b5dbf51c539f3cb.d: C:\Users\Nathaniel\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\darling_macro-0.20.11\src\lib.rs
+
+C:\Users\Nathaniel\Documents\Stellar Bootcamp\stellar-repo\contract\target\debug\deps\darling_macro-9b5dbf51c539f3cb.dll: C:\Users\Nathaniel\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\darling_macro-0.20.11\src\lib.rs
+
+C:\Users\Nathaniel\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\darling_macro-0.20.11\src\lib.rs:
