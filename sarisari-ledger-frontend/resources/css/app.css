@@ -1,0 +1,190 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@layer base {
+    body {
+        @apply m-0 font-sans text-zinc-900;
+        background: radial-gradient(circle at top right, #fffaf0 0%, #f8f5ef 45%);
+    }
+
+    h1,
+    h2,
+    h3 {
+        @apply mb-3;
+    }
+
+    label {
+        @apply mb-1.5 block text-sm;
+    }
+
+    input,
+    select {
+        @apply mb-2.5 w-full rounded-lg border border-[#c7c2b5] px-3 py-2.5 text-[15px];
+    }
+
+    button {
+        @apply cursor-pointer rounded-lg border-0 bg-teal-700 px-3.5 py-2.5 font-semibold text-white;
+    }
+
+    a {
+        @apply text-teal-700 no-underline;
+    }
+
+    table {
+        @apply w-full border-collapse overflow-hidden rounded-xl border border-[#ded7c8] bg-[#fffdf8];
+    }
+
+    th,
+    td {
+        @apply border-b border-[#ded7c8] px-3 py-2 text-left text-sm;
+    }
+}
+
+@layer components {
+    .app-main {
+        @apply mx-auto max-w-[1080px] px-4 pb-10 pt-6;
+    }
+
+    .app-main-sm {
+        @apply mx-auto max-w-[920px] px-4 pb-10 pt-6;
+    }
+
+    .auth-shell {
+        @apply grid min-h-screen place-items-center p-5;
+    }
+
+    .auth-card {
+        @apply w-full max-w-[460px] rounded-xl border border-[#ded7c8] bg-[#fffdf8] p-4;
+    }
+
+    .card {
+        @apply mb-4 rounded-xl border border-[#ded7c8] bg-[#fffdf8] p-4;
+    }
+
+    .subtitle {
+        @apply mb-6 text-zinc-500;
+    }
+
+    .top-nav {
+        @apply mb-5 flex flex-wrap items-center gap-2;
+    }
+
+    .top-nav-link {
+        @apply cursor-pointer rounded-lg border border-[#ded7c8] bg-[#fffdf8] px-3 py-2 text-sm text-zinc-900 no-underline;
+    }
+
+    .spacer {
+        @apply grow;
+    }
+
+    .app-label {
+        @apply mb-1.5 block text-sm;
+    }
+
+    .app-input {
+        @apply mb-2.5 w-full rounded-lg border border-[#c7c2b5] px-3 py-2.5 text-[15px];
+    }
+
+    .btn-primary {
+        @apply cursor-pointer rounded-lg border-0 bg-teal-700 px-3.5 py-2.5 font-semibold text-white;
+    }
+
+    .btn-ghost {
+        @apply cursor-pointer rounded-lg border border-[#ded7c8] bg-[#fffdf8] px-3 py-2 text-sm text-zinc-900;
+    }
+
+    .alert {
+        @apply mb-3 rounded-lg p-3;
+    }
+
+    .alert-success {
+        @apply border border-green-300 bg-green-100;
+    }
+
+    .alert-error {
+        @apply border border-red-200 bg-red-50 text-red-700;
+    }
+
+    .summary-grid {
+        @apply grid gap-3 sm:grid-cols-2 lg:grid-cols-3;
+    }
+
+    .summary-item {
+        @apply rounded-lg border border-[#ded7c8] bg-[#fffdf8] p-3;
+    }
+
+    .muted {
+        @apply m-0 text-zinc-500;
+    }
+
+    .table-wrap {
+        @apply w-full overflow-x-auto rounded-xl;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table-wrap table {
+        min-width: 640px;
+    }
+
+    .table-wrap-sm table {
+        min-width: 560px;
+    }
+
+    .row {
+        @apply mt-2 flex items-center justify-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .app-main,
+    .app-main-sm {
+        padding: 16px 12px 28px;
+    }
+
+    .card {
+        margin-bottom: 12px;
+        padding: 12px;
+    }
+
+    th,
+    td {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .top-nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .top-nav .spacer {
+        display: none;
+    }
+
+    .top-nav a,
+    .top-nav form,
+    .top-nav button {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .auth-card button {
+        width: 100%;
+    }
+}
