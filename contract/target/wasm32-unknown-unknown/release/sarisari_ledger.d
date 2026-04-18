@@ -1,0 +1,1 @@
+C:\Users\Nathaniel\Documents\Stellar\ Bootcamp\stellar-repo\contract\target\wasm32-unknown-unknown\release\sarisari_ledger.wasm: C:\Users\Nathaniel\Documents\Stellar\ Bootcamp\stellar-repo\contract\src\lib.rs
