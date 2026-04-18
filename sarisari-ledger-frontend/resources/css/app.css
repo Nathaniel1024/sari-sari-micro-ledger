@@ -60,10 +60,17 @@
 
     .auth-shell {
         @apply grid min-h-screen place-items-center p-5;
+        background:
+            radial-gradient(80rem 30rem at 8% -5%, rgba(255, 192, 120, 0.25), transparent 60%),
+            radial-gradient(60rem 28rem at 100% 0%, rgba(17, 125, 130, 0.2), transparent 60%),
+            linear-gradient(180deg, #fef8ef 0%, #f5ede0 50%, #f3ecdf 100%);
     }
 
     .auth-card {
-        @apply w-full max-w-[460px] rounded-xl border border-[#ded7c8] bg-[#fffdf8] p-4;
+        @apply w-full max-w-[520px] rounded-2xl border border-[#e8dcc6] bg-[#fffdf8] p-6 shadow-xl;
+        box-shadow:
+            0 18px 45px rgba(92, 74, 38, 0.12),
+            0 2px 0 rgba(255, 255, 255, 0.7) inset;
     }
 
     .card {
@@ -142,6 +149,55 @@
     .row {
         @apply mt-2 flex items-center justify-between;
     }
+
+    .login-header {
+        @apply mb-5;
+    }
+
+    .login-kicker {
+        @apply m-0 text-xs font-semibold uppercase tracking-[0.16em] text-[#9a7a3c];
+    }
+
+    .login-title {
+        @apply mb-2 mt-2 text-3xl font-semibold leading-tight text-[#1f2b2b];
+        font-family: "Segoe UI Variable Display", "Trebuchet MS", sans-serif;
+    }
+
+    .login-subtitle {
+        @apply mb-3 mt-0 text-sm text-zinc-600;
+    }
+
+    .login-demo {
+        @apply mb-0 rounded-lg border border-[#eadfcb] bg-[#fff8ee] px-3 py-2 text-sm text-zinc-700;
+    }
+
+    .auth-form input {
+        @apply mb-3 mt-1 rounded-xl border-[#cfc3ad] bg-white px-3 py-2.5;
+    }
+
+    .auth-form input:focus {
+        outline: 2px solid rgba(17, 125, 130, 0.22);
+        outline-offset: 1px;
+        border-color: #117d82;
+    }
+
+    .remember-inline {
+        @apply mb-4 mt-1 flex items-center gap-2 text-sm text-zinc-700;
+    }
+
+    .remember-inline input[type='checkbox'] {
+        @apply m-0 h-4 w-4 rounded border border-[#c4baa7] p-0;
+        accent-color: #0f7670;
+    }
+
+    .login-btn {
+        @apply w-full rounded-xl py-3 text-base;
+        background: linear-gradient(135deg, #0f766e 0%, #0b6a7d 100%);
+    }
+
+    .auth-row {
+        @apply mt-4 border-t border-[#eee3d0] pt-3;
+    }
 }
 
 @media (max-width: 768px) {
@@ -186,5 +242,9 @@
 
     .auth-card button {
         width: 100%;
+    }
+
+    .login-title {
+        font-size: 1.7rem;
     }
 }
