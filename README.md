@@ -67,10 +67,6 @@ soroban contract deploy \
 
 ![Deployed SSML Contract on Stellar Testnet](https://github.com/user-attachments/assets/63b180de-ce7c-4270-8749-0d73705c6d64)
 
-## Suggested GitHub "About" Description
-
-`Soroban smart contract for tracking sari-sari store customer debt on Stellar testnet with an auditable on-chain ledger.`
-
 ## Sample CLI Invocations (Dummy Certificate Calls)
 
 The following are template examples with dummy arguments, as requested:
