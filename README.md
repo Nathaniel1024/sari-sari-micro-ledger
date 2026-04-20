@@ -58,7 +58,18 @@ soroban contract deploy \
 ## Deployed Contract (Testnet)
 
 - Contract ID: `CBJEB7D4NS2QSQ7SOWDTOAY6MA5JSWXHL6DURPGYB26HVXSYB6E3IGT6`
-- Explorer: https://stellar.expert/explorer/testnet/contract/CBJEB7D4NS2QSQ7SOWDTOAY6MA5JSWXHL6DURPGYB26HVXSYB6E3IGT6
+- Stellar Expert (Contract): https://stellar.expert/explorer/testnet/contract/CBJEB7D4NS2QSQ7SOWDTOAY6MA5JSWXHL6DURPGYB26HVXSYB6E3IGT6
+- Stellar Lab (Contract): https://lab.stellar.org/r/testnet/contract/CBJEB7D4NS2QSQ7SOWDTOAY6MA5JSWXHL6DURPGYB26HVXSYB6E3IGT6
+- Deployment TX (WASM Upload): https://stellar.expert/explorer/testnet/tx/65839215bf2e85cfc0ad08700b2bd5d0c49abb0529dded3709cceeaa1c09c2a4
+- Deployment TX (Contract Create): https://stellar.expert/explorer/testnet/tx/71e9e724f66274360896a19055096921734753e0b9c41f35bb09a81845314ae2
+
+## Deployment Screenshot
+
+![Deployed SSML Contract on Stellar Testnet](https://github.com/user-attachments/assets/63b180de-ce7c-4270-8749-0d73705c6d64)
+
+## Suggested GitHub "About" Description
+
+`Soroban smart contract for tracking sari-sari store customer debt on Stellar testnet with an auditable on-chain ledger.`
 
 ## Sample CLI Invocations (Dummy Certificate Calls)
 
