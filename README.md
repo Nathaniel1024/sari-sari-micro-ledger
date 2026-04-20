@@ -55,6 +55,11 @@ soroban contract deploy \
   --network testnet
 ```
 
+## Deployed Contract (Testnet)
+
+- Contract ID: `CBJEB7D4NS2QSQ7SOWDTOAY6MA5JSWXHL6DURPGYB26HVXSYB6E3IGT6`
+- Explorer: https://stellar.expert/explorer/testnet/contract/CBJEB7D4NS2QSQ7SOWDTOAY6MA5JSWXHL6DURPGYB26HVXSYB6E3IGT6
+
 ## Sample CLI Invocations (Dummy Certificate Calls)
 
 The following are template examples with dummy arguments, as requested:
